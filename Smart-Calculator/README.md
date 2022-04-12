@@ -1,0 +1,10 @@
+Description:
+1. Write a program that reads two integer numbers from the same line and prints their sum in the standard output. Numbers can be positive, negative, or zero.
+2. If a user enters only a single number, the program should print the same number. If a user enters an empty line, the program should ignore it.
+When the command /exit is entered, the program must print "Bye!" (without quotes), and then stop.
+3. Add to the calculator the ability to read an unlimited sequence of numbers. Add a /help command to print some information about the program. If you encounter an empty line, do not output anything.
+4. The program must calculate expressions like these: 4 + 6 - 8, 2 - 3 - 4, and so on.
+5. The program should print Invalid expression in cases when the given expression has an invalid format. If a user enters an invalid command, the program must print Unknown command. All messages must be printed without quotes. The program must never throw an exception.
+To handle incorrect input, you should remember that the user input that starts with / is a command, in other situations, it is an expression.
+6. We suppose that the name of a variable (identifier) can contain only Latin letters. A variable can have a name consisting of more than one letter. The case is also important; for example, n is not the same as N. The value can be an integer number or a value of another variable. It should be possible to set a new value to an existing variable. To print the value of a variable you should just type its name.
+7. Your program should support multiplication *, integer division / and parentheses (...). To do this, use infix to postfix conversion algorithm above and then calculate the result using stack. Note that a sequence of + (like +++ or +++++) is an admissible operator that should be interpreted as a single plus. A sequence of - (like -- or ---) is also an admissible operator and its meaning depends on the length. If a user enters a sequence of * or /, the program must print a message that the expression is invalid.
