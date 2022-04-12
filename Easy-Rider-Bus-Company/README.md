@@ -1,0 +1,8 @@
+Description:
+1. The string containing the data in JSON format is passed to standard input. Check that the data types match. Check that the required fields are filled in. Display the information about the number of found errors in total and in each field. Keep in mind that there might be no errors at all.
+2. Only the fields that have such a requirement are relevant, i.e. stop_name, stop_type, a_time, so, please, count errors only for them.
+3. Find the names of all the bus lines. Verify the number of stops for each line.
+4. Make sure each bus line has exactly one starting point and one final stop. If a bus line does not meet this condition, stop checking and print a message about it. Do not continue checking the other bus lines. If all bus lines meet the condition, count how many starting points and final stops there are. Print their unique names in alphabetical order. Count the transfer stops and print their unique names in alphabetical order. A transfer stop is a stop shared by at least two bus lines.
+5. Check that the arrival time for the upcoming stops for a given bus line is increasing. If the arrival time for the next stop is earlier than or equal to the time of the current stop, stop checking that bus line and remember the name of the incorrect stop. Display the information for those bus lines that have time anomalies. For the correct stops, do not display anything. If all the lines are correct timewise, print OK.
+6. Check that all the departure points, final stops, and transfer stations are not "On-demand".
+Display the unique names of the stops containing this type of issue. Sort them in ascending order.
